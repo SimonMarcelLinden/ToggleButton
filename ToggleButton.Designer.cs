@@ -27,7 +27,7 @@
         private void InitializeComponent(){
             this.components = new System.ComponentModel.Container();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.btnSlide = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.btnSlide = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.btnToggle = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
@@ -41,32 +41,33 @@
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.btnSlide,
             this.btnToggle});
-            this.shapeContainer1.Size = new System.Drawing.Size(65, 29);
+            this.shapeContainer1.Size = new System.Drawing.Size(85, 29);
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
             // 
             // btnSlide
             // 
-            this.btnSlide.BackColor = System.Drawing.Color.White;
+            this.btnSlide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(86)))));
             this.btnSlide.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.btnSlide.BorderColor = System.Drawing.Color.White;
+            this.btnSlide.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(86)))));
+            this.btnSlide.CornerRadius = 12;
             this.btnSlide.FillGradientColor = System.Drawing.Color.Chartreuse;
             this.btnSlide.Location = new System.Drawing.Point(4, 2);
             this.btnSlide.Name = "btnSlide";
-            this.btnSlide.Size = new System.Drawing.Size(24, 24);
+            this.btnSlide.Size = new System.Drawing.Size(38, 24);
             this.btnSlide.Click += new System.EventHandler(this.BtnSlide_Click);
             // 
             // btnToggle
             // 
-            this.btnToggle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnToggle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(50)))), ((int)(((byte)(53)))));
             this.btnToggle.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.btnToggle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnToggle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(50)))), ((int)(((byte)(53)))));
             this.btnToggle.CornerRadius = 14;
             this.btnToggle.Enabled = false;
             this.btnToggle.FillGradientColor = System.Drawing.Color.LawnGreen;
             this.btnToggle.Location = new System.Drawing.Point(0, 0);
             this.btnToggle.Name = "btnToggle";
-            this.btnToggle.Size = new System.Drawing.Size(64, 28);
+            this.btnToggle.Size = new System.Drawing.Size(84, 28);
             // 
             // timer1
             // 
@@ -85,7 +86,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.shapeContainer1);
             this.Name = "ToggleButton";
-            this.Size = new System.Drawing.Size(65, 29);
+            this.Size = new System.Drawing.Size(85, 29);
             this.ResumeLayout(false);
 
         }
@@ -96,6 +97,6 @@
         private Microsoft.VisualBasic.PowerPacks.RectangleShape btnToggle;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
-        private Microsoft.VisualBasic.PowerPacks.OvalShape btnSlide;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape btnSlide;
     }
 }

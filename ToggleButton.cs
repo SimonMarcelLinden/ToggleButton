@@ -152,6 +152,20 @@ namespace ToggleButton
                 btnSlide.BorderWidth = value;
             }
         }
+        public int SlideCornerRadius
+        {
+            // Retrieves the value of the private variable mainBackColor.
+            get
+            {
+                return btnSlide.CornerRadius;
+            }
+            // Stores the selected value in the private variable mainBackColor, and
+            // updates the background color of the button control btnToggle.
+            set
+            {
+                btnSlide.CornerRadius = value;
+            }
+        }
         public System.Drawing.Drawing2D.DashStyle SlideBorderStyle
         {
             // Retrieves the value of the private variable mainBackColor.
@@ -188,13 +202,13 @@ namespace ToggleButton
                 timer1.Start();
             }
 
-            if (this.btnSlide.Left >= 36){
+            if (this.btnSlide.Left >= 42){
                 timer2.Start();
             }
         }
         private void Timer1_Tick(object sender, EventArgs e){
             this.btnSlide.Left += 5;
-            if (this.btnSlide.Left >= 36){
+            if (this.btnSlide.Left >= 42){
                 timer1.Stop();
             }
         }
